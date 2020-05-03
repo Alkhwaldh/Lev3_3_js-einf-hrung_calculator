@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="row">
+            <div class="column" id="displayErgebnisse"></div>
+        </div>
+
+        <div class="row">
+            <div class="btn-calc column" id="clear" onclick="clearScreen()" ><p>Clear</p> </div>
+            <div class="btn-operator column" id="divide" onclick="add('/')"> <p>&#247</p> </div>
+        </div>
+
+        <div class="row">
+            <div class="btn-calc column-num" id="seven" onclick="add(7)"> <p>7</p> </div>
+            <div class="btn-calc column-num" id="eight" onclick="add(8)"><p>8</p></div>
+            <div class="btn-calc column-num" id="nine" onclick="add(9)"><p>9</p></div>
+            <div class="btn btn-operator column" id="mal" onclick="add('*')"><p>x</p></div>
+        </div>
+
+        <div class="row">
+            <div class="btn-calc column-num" id="four" onclick="add(4)"><p>4</p></div>
+            <div class="btn-calc column-num" id="five" onclick="add(5)"><p>5</p></div>
+            <div class="btn-calc column-num" id="six" onclick="add(6)"><p>6</p></div>
+            <div class="btn btn-operator column" id="minus" onclick="add('-')"><p></p>-</div>
+        </div>
+
+        <div class="row">
+            <div class="btn-calc column-num" id="one" onclick="add(1)"><p>1</p></div>
+            <div class="btn-calc column-num" id="two" onclick="add(2)"><p>2</p></div>
+            <div class="btn-calc column-num" id="three" onclick="add(3)"><p>3</p></div>
+            <div class="btn btn-operator column" id="plus" onclick="add('+')"><p>+</p></div>
+        </div>
+
+        <div class="row">
+            <div class="btn-calc column-num" id="zero" onclick="add(0)"><p>0</p></div>
+            <div class="btn-calc column-num" id="punkt"onclick="add('.')"><p>.</p></div>
+            <div class="btn btn-operator column" id="gliech"onclick="calculate()"><p>=</p></div>
+        </div>
+
+<!-- End Div -->
+    </div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
